@@ -2,7 +2,9 @@
 
 This project introduces Vue elements that assist in making HTML forms. 
     
-Part 1 makes a Vue3 Hello World framework and changes the src/App.vue file. It introduces a form that uses the Vue @submit.prevent event. Form contents are added using the : v-bind directive, the @ v-on event directive, and the v-model attribute with it's lazy, trim, and number modifiers.
+* Part 1 makes a Vue3 Hello World framework and changes the src/App.vue file. It introduces a form that uses the Vue @submit.prevent event. Form contents are added using the : v-bind directive, the @ v-on event directive, and the v-model attribute with it's lazy, trim, and number modifiers.
+
+* Part 2 The Vue framework has tools to simplify web form creation. In part 2 we cover input tags that extend the basic input type=text tag. The form output tag and how it works is explored. Input type=hidden tags and what they do are looked at.
 
 ---
 
