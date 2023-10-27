@@ -48,8 +48,8 @@ const sum = computed( () => simpleNumber.value + +simpleRange.value)
       </fieldset>
       <fieldset><legend>Hidden</legend>
         <input type="hidden" name="total" :value="sum">
-        <input type="hidden" name="sessionID" value="server-generagte-characters">
-        <input type="hidden" name="csrf-token" value="server-generagte-characters">
+        <input type="hidden" name="sessionID" value="server-generated-characters">
+        <input type="hidden" name="csrf-token" value="server-generated-characters">
       </fieldset>
     </form>
   </main>
