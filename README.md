@@ -8,6 +8,8 @@ This project introduces Vue elements that assist in making HTML forms.
 
 * Part 3 covers boolean and list form elements including datalist, radio buttons, checkbox buttons and the select tag. Lists are handled using v-for directive, v-if directive, and the template tag. All changes are in the src/App.vue file.
 
+* Part 4 covers the Meter and Progress tags. Buttons are given custom events using setTimeout that interact with a progress tag. The reset button behaviour is looked at and what to watch for when using it with the Vue framework.
+
 ---
 
 ## Links
