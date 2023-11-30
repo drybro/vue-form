@@ -10,11 +10,13 @@ This project introduces Vue elements that assist in making HTML forms.
 
 * Part 4 covers the Meter and Progress tags. Buttons are given custom events using setTimeout that interact with a progress tag. The reset button behaviour is looked at and what to watch for when using it with the Vue framework.
 
+* Part 5 covers the Input type=file tag and Form Submission using a Node.js echo server. It explores 'get' submissions and 'post' submissions using 'application/x-www-form-urlencoded', 'multipart/form-data', and 'text/plain' encoding. The FormData object collects name-value data. The Fetch API is used by Vue to send data and handle responses.
+
 ---
 
 ## Links
 
- ✅ [Youtube](https://www.youtube.com/channel/UCyNFYW0f84SxWp_ZZtaALKQ/)
+ ✅ [Youtube](https://www.youtube.com/playlist?list=PLNvKNI4deS74WeuPqwVA8NHQWjAh4J0fg)
 
 ---
 
