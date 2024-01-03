@@ -10,8 +10,7 @@ const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sat
 
 function onSubmit(event) {
   const frmData = new FormData(event.target);
-  fetch("http://127.0.0.1:3000", { method: 'post',
-    body:new URLSearchParams(frmData) })
+  fetch("http://127.0.0.1:3000", { method: 'post', body: new URLSearchParams(frmData) })
     .then(r => r.json()).then(d => alert(JSON.stringify(d, null, '\n')))
     .catch(e => console.error(e))
 }
@@ -138,7 +137,9 @@ function onSubmit(event) {
         </fieldset>
       </fieldset>
       <datalist id="numbs">
-        <option>25</option><option>50</option><option>75</option>
+        <option>25</option>
+        <option>50</option>
+        <option>75</option>
       </datalist>
       <datalist id="daysOfWeek">
         <option v-for="val in daysOfWeek" :value="val.slice(0, 3)">{{ val }}</option>
@@ -148,19 +149,71 @@ function onSubmit(event) {
 </template>
 
 <style scoped>
-textarea + aside{ text-align: right;}
-select:focus:invalid, textarea:focus:invalid, input:focus:invalid{ outline-color: orange;}
-select:invalid, textarea:invalid, input:invalid{ outline: medium dotted red;}
-select:valid, textarea:valid, input:valid:not([type="submit"],[type="color"],[type="checkbox"],[type="range"],[type="radio"]){ outline: thin solid green;}
-:required{ background-color: azure;}
-.req::before{content: '*';}
-fieldset { display: inline; width: fit-content; vertical-align: top; }
-label { display: inline-block; margin: 0.2rem; vertical-align: middle;}
-header {line-height: 1.5;}
-.logo {display: block; margin: 0 auto 2rem;}
-@media (min-width: 1024px) {
-  header {display: flex; place-items: center; padding-right: calc(var(--section-gap) / 2);}
-  .logo {margin: 0 2rem 0 0;}
-  header .wrapper {display: flex; place-items: flex-start; flex-wrap: wrap;}
+textarea+aside {
+  text-align: right;
 }
-</style>
+
+select:focus:invalid,
+textarea:focus:invalid,
+input:focus:invalid {
+  outline-color: orange;
+}
+
+select:invalid,
+textarea:invalid,
+input:invalid {
+  outline: medium dotted red;
+}
+
+select:valid,
+textarea:valid,
+input:valid:not([type="submit"], [type="color"], [type="checkbox"], [type="range"], [type="radio"]) {
+  outline: thin solid green;
+}
+
+:required {
+  background-color: azure;
+}
+
+.req::before {
+  content: '*';
+}
+
+fieldset {
+  display: inline;
+  width: fit-content;
+  vertical-align: top;
+}
+
+label {
+  display: inline-block;
+  margin: 0.2rem;
+  vertical-align: middle;
+}
+
+header {
+  line-height: 1.5;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+}</style>

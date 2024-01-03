@@ -12,7 +12,7 @@ This project introduces Vue elements that assist in making HTML forms.
 
 * Part 5 covers the Input type=file tag and Form Submission using a Node.js echo server. It explores 'get' submissions and 'post' submissions using 'application/x-www-form-urlencoded', 'multipart/form-data', and 'text/plain' encoding. The FormData object collects name-value data. Vue uses the Fetch API to send data and handle responses.
 
-* Part 6 covers form validation. It uses HTML validation to prevent errors from being submitted to a PHP validating echo server. CSS provides user guidance on how to fill out forms. Input type dateTime depreciated. Submit 'application/x-www-form-urlencoded' using the Fetch API.
+* Part 6 covers form validation. It uses HTML validation to prevent errors from being submitted to a PHP validating echo server. CSS provides user guidance on how to fill out forms. Input type dateTime depreciated and submit 'application/x-www-form-urlencoded' using the Fetch API.
 
 ---
 

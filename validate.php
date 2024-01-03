@@ -5,7 +5,8 @@ header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
 
-if (!empty($_POST)) $data = $_POST;
+if (!empty($_POST))
+    $data = $_POST;
 else exit;
 
 if (!array_key_exists('agreed', $data))
