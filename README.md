@@ -14,6 +14,8 @@ This project introduces Vue elements that assist in making HTML forms.
 
 * Part 6 covers form validation. It uses HTML validation to prevent errors from being submitted to a PHP validating echo server. CSS provides user guidance on how to fill out forms. Input type dateTime depreciated and submit 'application/x-www-form-urlencoded' using the Fetch API.
 
+* Part 7 covers form validation. It uses pattern attribute with setCustomValidity. It deselects radio and single option select tags. Uses watch, ref attribute, and conditional classes to handle multiple option submissions. Custom error validation prevents submit.
+
 ---
 
 ## Links

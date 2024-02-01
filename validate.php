@@ -31,14 +31,14 @@ elseif (!array_key_exists('phone', $data))
     $ret = ['error' => ['phone' => 'required']];
 elseif (!preg_match('(\d\d\d-\d\d\d\d)', $data['phone']))
     $ret = ['error' => ['phone' => 'format 555-5555']];
-elseif (!array_key_exists('dayOfWeek', $data))
-    $ret = ['error' => ['dayOfWeek' => 'required']];
-elseif (!array_key_exists('daysOfWeek', $data))
-    $ret = ['error' => ['daysOfWeek' => 'required']];
-elseif (
+elseif (array_key_exists('daysOfWeek', $data)){
+    if(!is_array($data['daysOfWeek']))
+        $ret = ['error' => ['daysOfWeek[]' => 'use []']];
+    elseif(
     !empty(array_intersect($data['daysOfWeek'], array('Mon', 'Tue', 'Wed', 'Thu', 'Fri')))
     && !empty(array_intersect($data['daysOfWeek'], array('Sat', 'Sun')))
-)
-    $ret = ['error' => ['daysOfWeek' => 'Select ether weekdays or weekends.']];
+    ) $ret = ['error' => ['daysOfWeek' => 'Select either weekdays or weekends.']];
+    else $ret = $data;
+}
 else $ret = $data;
 echo json_encode($ret);
