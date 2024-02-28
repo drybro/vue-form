@@ -16,6 +16,8 @@ This project introduces Vue elements that assist in making HTML forms.
 
 * Part 7 covers form validation. It uses pattern attribute with setCustomValidity. It deselects radio and single option select tags. Uses watch, ref attribute, and conditional classes to handle multiple option submissions. Custom error validation prevents submit.
 
+* Part 8 covers input masks. Brief description on what an input mask is with browser examples. Mention Javascript libraries that handle common phone and credit card masks. Build custom masks to handle US Zip code and Canadian Post Code.
+
 ---
 
 ## Links
